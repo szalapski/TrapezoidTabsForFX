@@ -1,7 +1,7 @@
 # Trapezoid Tabs For Firefox
-I loved the trapezoid tabs like in old Chrome, and now with Firefox Nova, they are even more beneficial as they have a look more distinctive from all the ovaled corners now in Firefx.
+I loved the trapezoid tabs like in old Chrome, and now with Firefox Nova, they are even more beneficial as they have a look more distinctive from all the ovaled corners now in Firefox.
 
-Works best with Nova (the default in Firefox 157 and later).  Works best with compact mode enabled in Firefox's Main menu > Settings > Appearance > Website appearance.
+Works best with Nova (the default in Firefox 157 and later).  Works best with compact mode enabled in Firefox's Main menu > Settings > Appearance > Website appearance. so I decided to make my own userChrome based on https://github.com/HolyPolyRoly/TrapezoidTabsForFX.
 
 Preview:
 <img width="1364" height="225" alt="image" src="https://github.com/user-attachments/assets/f6f344d0-81b8-489b-bcef-dad20a00ef91" />
@@ -25,4 +25,3 @@ This is based on https://github.com/HolyPolyRoly/TrapezoidTabsForFX.  Changes fr
 ### Ideas for the future
 - Dark mode
 - Incorporate colors from theme or settings
-- 
