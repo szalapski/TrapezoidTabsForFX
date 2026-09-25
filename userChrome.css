@@ -1,20 +1,93 @@
-/*My trapezoid-tabbed userChrome.css
- "Just like the old days of Chrome"*/
+/* avoid wasted space */
+#tabbrowser-tabs[orient="horizontal"]{
+	min-height: 36px !important;
+}
 
-/*Make tabs trapezoid shaped*/
+/*make tabs trapezoid shaped and borders so that the active tab is utterly obvious */
 .tab-line {
   display: none;
 }
 
-.tab-background {
-  border-radius: 3px 3px 0 0;
-  transform: perspective(10px) rotateX(2.5deg);
+/* overlap tabs (up to 20 in count) */
+#tabbrowser-arrowscrollbox {
+	.tabbrowser-tab {
+		&:nth-child(2) { left: -4px; }
+		&:nth-child(3) { left: -8px; }
+		&:nth-child(4) { left: -12px; }
+		&:nth-child(5) { left: -16px; }
+		&:nth-child(6) { left: -20px; }
+		&:nth-child(7) { left: -24px; }
+		&:nth-child(8) { left: -28px; }
+		&:nth-child(9) { left: -32px; }
+		&:nth-child(10){ left: -36px; }
+		&:nth-child(11){ left: -40px; }	
+		&:nth-child(12){ left: -44px; }	
+		&:nth-child(13){ left: -48px; }	
+		&:nth-child(14){ left: -52px; }	
+		&:nth-child(15){ left: -56px; }	
+		&:nth-child(16){ left: -60px; }	
+		&:nth-child(17){ left: -64px; }	
+		&:nth-child(18){ left: -68px; }	
+		&:nth-child(19){ left: -72px; }	
+		&:nth-child(20){ left: -76px; }	
+	}
+	#tabbrowser-arrowscrollbox-periphery {
+		&:nth-child(2) {left:   1px; }
+		&:nth-child(3) {left:  -3px; }
+		&:nth-child(4) {left:  -7px; }
+		&:nth-child(5) {left: -11px; }
+		&:nth-child(6) {left: -15px; }
+		&:nth-child(7) {left: -19px; }
+		&:nth-child(8) {left: -23px; }
+		&:nth-child(9) {left: -27px; }
+		&:nth-child(10){left: -31px; }
+		&:nth-child(11){left: -35px; }
+		&:nth-child(12){left: -39px; }
+		&:nth-child(13){left: -43px; }
+		&:nth-child(14){left: -47px; }
+		&:nth-child(15){left: -51px; }
+		&:nth-child(16){left: -55px; }
+		&:nth-child(17){left: -59px; }
+		&:nth-child(18){left: -63px; }
+		&:nth-child(19){left: -67px; }
+		&:nth-child(20){left: -71px; }
+		&:nth-child(21){left: -75px; }
+	}
 }
 
-/*Skew new tab button*/
-#tabs-newtab-button {
-  transform: skew(25deg);
+.tabbrowser-tab:has(.tab-background[selected]){
+	z-index: 1; /* make active tab appear on top */
 }
+
+tab.tabbrowser-tab{
+	stack.tab-stack { padding-inline: 2px;  }
+	.tab-content{ margin-top: 5px; }
+ }
+
+
+.tab-background:not([selected]){
+	border: solid 1px #444 !important;
+	.tab-loading-burst {
+	  background: lightgray; /* visual cue for inactive tabs */
+	}
+}
+/* thicker border-bottom on all inactive tabs and newtab button */
+.tab-background:not([selected]),
+#tabs-newtab-button{
+	border-bottom: solid 2px #111 !important;
+}
+.tab-background {
+  border-radius: 6px 6px 0 0 !important;
+  transform: perspective(10px) rotateX(2.0deg);
+  outline: none 7px !important;
+  margin-bottom: 1px !important; 
+  
+  &[selected]{
+	border: solid 2px #111 !important;
+	border-bottom: none !important;
+  }
+}
+
 
 /*Clean up tabs*/
 .tabbrowser-tab::before, 
@@ -23,8 +96,19 @@
 }
 
 .titlebar-spacer{
-  display: none
+  display: none;
 }
 
-/*Uncomment the line below if you want the default look for the address bar*/
-/*@import "./megabar-fixes.css";/**/
+toolbar#nav-bar {
+	border-top: none !important;
+}
+
+
+/* Put bookmarks toolbar above tabs and nav */
+#navigator-toolbox {
+  display: flex;
+  flex-direction: column;
+}
+#nav-bar {
+  order: 2 !important;
+}
