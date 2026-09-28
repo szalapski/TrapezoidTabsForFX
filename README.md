@@ -8,10 +8,10 @@ Preview:
 
 ## Installation
 1. If necessary, create the `chrome` folder and, inside it, the file `userChrome.css` in a particular location:
-  - Windows: `%APPDATA%\Mozilla\Firefox\Profiles\<profile-folder>\chrome\userChrome.css`
-  - macOS: `$HOME/Library/Application Support/Firefox/Profiles/<profile-folder>/chrome/userChrome.css`
-  - Linux: `$HOME/.mozilla/firefox/<profile-folder>/chrome/userChrome.css`
-    (Note: Replace <profile-folder> with your specific 8-character random profile string ending in .default-release or similar) 
+    - Windows: `%APPDATA%\Mozilla\Firefox\Profiles\<profile-folder>\chrome\userChrome.css`
+    - macOS: `$HOME/Library/Application Support/Firefox/Profiles/<profile-folder>/chrome/userChrome.css`
+    - Linux: `$HOME/.mozilla/firefox/<profile-folder>/chrome/userChrome.css`
+      (Note: Replace <profile-folder> with your specific 8-character random profile string ending in .default-release or similar) 
 3. Paste the code from userChrome.css into your userChrome.css; for Windows, this is found in `%APPDATA%\Mozilla\Firefox\Profiles\[your-default-release]\chrome\`
 4. In Firefox `about:config`, set `devtools.chrome.enabled` to true.
 5. Restart Firefox.
