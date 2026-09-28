@@ -7,10 +7,15 @@ Preview:
 <img width="1364" height="225" alt="image" src="https://github.com/user-attachments/assets/f6f344d0-81b8-489b-bcef-dad20a00ef91" />
 
 ## Installation
-1. Paste the code from userChrome.css into your userChrome.css; for Windows, this is found in `%APPDATALOCAL%\Mozilla\Firefox\Profiles\[your-default-release]\chrome\`. You may need to create the file and the `chrome` folder it needs to be in.
-2. In Firefox `about:config`, set `devtools.chrome.enabled` to true.
-3. Restart Firefox.
-4. Optional: This works best with *compact mode* enabled in Firefox's Main menu > Settings > Appearance > Website appearance.
+1. If necessary, create the `chrome` folder and, inside it, the file `userChrome.css` in a particular location:
+  - Windows: `%APPDATA%\Mozilla\Firefox\Profiles\<profile-folder>\chrome\userChrome.css`
+  - macOS: `$HOME/Library/Application Support/Firefox/Profiles/<profile-folder>/chrome/userChrome.css`
+  - Linux: `$HOME/.mozilla/firefox/<profile-folder>/chrome/userChrome.css`
+    (Note: Replace <profile-folder> with your specific 8-character random profile string ending in .default-release or similar) 
+3. Paste the code from userChrome.css into your userChrome.css; for Windows, this is found in `%APPDATA%\Mozilla\Firefox\Profiles\[your-default-release]\chrome\`
+4. In Firefox `about:config`, set `devtools.chrome.enabled` to true.
+5. Restart Firefox.
+6. Optional: This works best with *compact mode* enabled in Firefox's Main menu > Settings > Appearance > Website appearance.
 
 Works best with Nova (the default in Firefox 157 and later).  
 Works best with compact mode enabled in Firefox's Main menu > Settings > Appearance > Website appearance.
