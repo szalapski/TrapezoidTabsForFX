@@ -1,5 +1,5 @@
 # Trapezoid Tabs For Firefox
-I loved the trapezoid tabs like in old Chrome, and now with Firefox Nova (Firefox's new design that features ovals everywhere), such they would be even more helpful to distinguish such tabs from all the other UI elements at a glance.  This userChrome.css does so.
+I loved the trapezoid tabs like in old Chrome, and now with Firefox Nova (Firefox's new design that features ovals everywhere), such angled tabs would be even more helpful to distinguish them from all the other oval UI elements at a glance.  This userChrome.css does so.
 
 Works best with compact mode enabled in Firefox's Main menu > Settings > Appearance > Website appearance. so I decided to make my own userChrome based on https://github.com/HolyPolyRoly/TrapezoidTabsForFX.
 
