@@ -24,7 +24,7 @@ Works best with compact mode enabled in Firefox's Main menu > Settings > Appeara
 This is based on https://github.com/HolyPolyRoly/TrapezoidTabsForFX.  Changes from that version:
 - Tabs overlap better
 - A bold border and white tab color offset the active tab very starkly.  Inactive tabs show as light gray, making it more obvious.
-- Some extra spacing is removed for a more
+- Some extra spacing is removed for a more space-efficient tab bar
 - Tab bar moved to top of window (since the address bar and bookmarks apply only to the current tab, it is a better mental model that the tab includes them)
 
 ### Ideas for the future
